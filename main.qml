@@ -79,7 +79,7 @@ ApplicationWindow {
         TextField{
             id: codeWord;
             Layout.alignment: Qt.AlignCenter;
-            placeholderText: 'Recieved Code Word';
+            placeholderText: 'Received Code Word';
             selectByMouse: true;
             selectionColor: 'lightgray'
             width: 100;
@@ -98,14 +98,15 @@ ApplicationWindow {
             onClicked: {
                 hamming.detectError(codeWord.text);
                 let data = hamming.getCodeWord;
-                if(hamming.getErr !== 0){
+                const errPos = hamming.getErrPos;
+                if(errPos !== 0){
                     resLbl.color = 'red';
-                    resLbl.text = 'The position of error is ' + (data.length - hamming.getErr + 1) +
+                    resLbl.text = 'The position of error is ' + errPos +
                                       ' from the left';
                 }
                 else {
                     resLbl.color = 'green';
-                    resLbl.text = 'There is no error in the received message.'
+                    resLbl.text = 'There is no error in the received data.'
                 }
             }
         }

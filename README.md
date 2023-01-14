@@ -1,11 +1,10 @@
-- [Hamming Code](#hamming-code)
-  - [content](#content)
-    - [What's Hamming Code](#whats-hamming-code)
-    - [Algorithm](#algorithm)
-    - [Output](#output)
-
 # Hamming Code
 Implementing hamming code algorithm using PySide2 and QML
+
+- [content](#content)
+  - [What's Hamming Code](#whats-hamming-code)
+  - [Algorithm](#algorithm)
+  - [Output](#output)
 
 ## content
 
@@ -101,3 +100,4 @@ The **self.m_errPos** value is equal to bit position that is broken.
 
 ### Output
 The following gif shows output of program:
+![output.gif](./hamming_output.gif)

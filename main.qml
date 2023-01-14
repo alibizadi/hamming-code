@@ -4,8 +4,8 @@ import QtQuick.Controls 2.1
 import QtQuick.Layouts 1.12
 
 ApplicationWindow {
-    width: 640;
-    height: 480;
+    width: 940;
+    height: 580;
     visible: true;
     title: qsTr("Hello World");
 
@@ -27,8 +27,9 @@ ApplicationWindow {
             placeholderText: 'Data Word';
             selectByMouse: true;
             selectionColor: 'lightgray';
-            width: 100;
-            height: 30;
+            font.pointSize: 18;
+            implicitWidth: 300;
+            implicitHeight: 50;
 
             onTextChanged: {
                 let flag1;
@@ -90,9 +91,10 @@ ApplicationWindow {
             Layout.alignment: Qt.AlignCenter;
             placeholderText: 'Received Code Word';
             selectByMouse: true;
-            selectionColor: 'lightgray'
-            width: 100;
-            height: 30;
+            selectionColor: 'lightgray';
+            font.pointSize: 18;
+            implicitWidth: 300;
+            implicitHeight: 50;
         }
 
         Button{

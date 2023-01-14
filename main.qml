@@ -9,6 +9,10 @@ ApplicationWindow {
     visible: true;
     title: qsTr("Hello World");
 
+    background: Rectangle {
+        color: 'lightgray';
+    }
+
     ColumnLayout{
         anchors.fill: parent;
         spacing: parent.height / 10;
@@ -53,6 +57,11 @@ ApplicationWindow {
             id: btn1;
             Layout.alignment: Qt.AlignCenter;
             enabled: false;
+            background: Rectangle{
+                implicitWidth: 90;
+                implicitHeight: 40;
+                color: 'gray';
+            }
             Text{
                 anchors.centerIn: parent;
                 text: 'Submit';
@@ -90,6 +99,12 @@ ApplicationWindow {
             id: btn2;
             visible: false;
             Layout.alignment: Qt.AlignCenter;
+            background: Rectangle{
+                implicitWidth: 90;
+                implicitHeight: 40;
+                color: 'gray';
+            }
+
             Text{
                 anchors.centerIn: parent;
                 text: 'Compare';

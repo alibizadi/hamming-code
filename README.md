@@ -1,12 +1,12 @@
 # Hamming Code
 Implementing hamming code algorithm using PySide2 and QML
 
-- [content](#content)
+- [Content](#content)
   - [What's Hamming Code](#whats-hamming-code)
   - [Algorithm](#algorithm)
   - [Output](#output)
 
-## content
+## Content
 
 ### What's Hamming Code
 Hamming code is an error correction system that can detect and correct errors when data is stored or transmitted. It requires adding additional parity bits with the data. It is commonly used in error correction code (ECC) RAM.

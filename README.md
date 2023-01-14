@@ -2,7 +2,7 @@
 Implementing hamming code algorithm using PySide2 and QML
 
 ## Content
-- [What's Hamming Code](#What's Hamming Code)
+- [What's Hamming Code](#What's%20Hamming%20Code)
 - [Algorithm](#Algorithm)
 - [Output](#Output)
 

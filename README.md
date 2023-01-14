@@ -23,7 +23,7 @@ def calcRedundantBits(self, n):
 ```
 Above function calculate minimum value of **k** that applies to above formula.
 
-When we calculate **k** value, we must specify the position of parity bits (Positions from 1 to $n + k$). Parity bits are placed in positions that are power of 2 ($2^0, 2^1, 2^2, ...$).  
+When we calculate **k** value, we must specify the position of parity bits (Positions from 1 to $n + k$). Parity bits are placed in positions that are power of 2 ( $2^0, 2^1, 2^2, ...$ ).  
 For that we declare following function:
 ```python
 def posRedundantBits(self, data):
